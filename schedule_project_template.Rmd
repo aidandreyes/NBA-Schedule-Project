@@ -45,13 +45,11 @@ htmltools::img(src = 'https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.sv
 
 # Introduction
 
-The purpose of this project is to gauge your technical skills and problem solving ability by working through something similar to a real NBA data science project. You will work your way through this R Markdown document, answering questions as you go along. Please begin by adding your name to the "author" key in the YAML header. When you're finished with the document, come back and type your answers into the answer key at the top. Please leave all your work below and have your answers where indicated below as well. Please note that we will be reviewing your code so make it clear, concise, and **avoid long printouts.** Feel free to add in as many new code chunks as you'd like.
-
-Remember that we will be grading the quality of your code and visuals alongside the correctness of your answers. Please try to use the tidyverse as much as possible (instead of base R and explicit loops). Please do not bring in any outside data, and use the provided data as truth (for example, some "home" games have been played at secondary locations, including TOR's entire 2020-21 season. These are not reflected in the data and you do not need to account for this.) Note that the OKC and DEN 2024-25 schedules in `schedule_24_partial.csv` intentionally include only 80 games, as the league holds 2 games out for each team in the middle of December due to unknown NBA Cup matchups. Do not assign specific games to fill those two slots.
+The purpose of this project is to break down and investigate schedule difficulty among teams in the National Basketball Association, using schedule datasets from the 2014-15 season to the 2024-25 season. 
 
 **Note:**
 
-**Throughout this document, any `season` column represents the year each season started. For example, the 2015-16 season will be in the dataset as 2015. We may refer to a season by just this number (e.g. 2015) instead of the full text (e.g. 2015-16).**
+**Throughout this document, any `season` column represents the year each season started. For example, the 2015-16 season will be in the dataset as 2015. 
 
 <h1 class="red-header">
 
@@ -79,7 +77,6 @@ Answers
 
 ## Part 2
 
-Please show your work in the document, you don't need anything here.
 
 ## Part 3
 
@@ -666,4 +663,5 @@ This model takes the season-by-season schedule factors dataframe from the previo
 ```{r}
 summary(win_loss_model)
 ```
+
 
