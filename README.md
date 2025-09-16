@@ -1,6 +1,6 @@
 # NBA Schedule Project by Aidan Reyes
 
-This project uses code in R to break down and investigate schedule difficulty among teams in the NBA, using schedule datasets from the 2014-15 season to the 2024-25 season. The .csv datasets of this project provide schedule information such as the date, home / away team, and team stats from the game (with the exception of the 2024-25 season). There is also a locations dataset provided to detail each team's longitude, latitude, and timezone. 
+This project uses code in R to break down and investigate schedule difficulty among teams in the NBA, using schedule datasets from the 2014-15 season to the 2024-25 season. Schedule difficulty is analyzed by taking into account the amount of travel, the amount of rest days in between games, and the average winning percentages of each team's opponents. The .csv datasets of this project provide schedule information such as the date, home / away team, and team stats from the game (with the exception of the 2024-25 season). There is also a locations dataset provided to detail each team's longitude, latitude, and timezone. 
 
 Definitions for the terms used in these datasets can be found at in the data dictionary file. 
 
