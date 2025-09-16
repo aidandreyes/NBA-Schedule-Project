@@ -6,4 +6,3 @@ Definitions for the terms used in these datasets can be found at in the data dic
 
 The ZIP file provided above will direct you to HTML files that display both the code chunks and observations for each question. The R Markdown HTML file will also provide an interactive schedule graph (with the plotly package) that visualizes OKC and DEN's 2024-25 season schedules, showing game date, opponent, home/away status, and whether or not it is a back-to-back. 
 
-"C:\Users\ndrey\OneDrive\Pictures\Screenshots\Screenshot 2025-09-16 155808.png"
