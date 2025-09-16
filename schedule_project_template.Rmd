@@ -98,8 +98,7 @@ library(plotly)
 ```{r load data, message = F, warning = F}
 
 library(tidyverse)
-# Note, you will likely have to change these paths. If your data is in the same folder as this project, 
-# the paths will likely be fixed for you by deleting ../../Data/schedule_project/ from each string.
+
 schedule <- read_csv("schedule.csv")
 draft_schedule <- read_csv("schedule_24_partial.csv")
 locations <- read_csv("locations.csv")
@@ -667,3 +666,4 @@ This model takes the season-by-season schedule factors dataframe from the previo
 ```{r}
 summary(win_loss_model)
 ```
+
