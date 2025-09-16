@@ -1,5 +1,3 @@
-OKC Thunder Data Scientist Hiring Project Data Dictionary
-
 # ---------------------------------------------------------
 # schedule.csv
 # 
