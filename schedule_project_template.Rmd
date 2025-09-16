@@ -104,13 +104,10 @@ game_data <- read_csv("team_game_data.csv")
 
 ## Part 1 -- Schedule Analysis
 
-In this section, you're going to work to answer questions using NBA scheduling data.
-
 ### Question 1
 
-**QUESTION:** How many times are the Thunder scheduled to play 4 games in 6 nights in the provided 80-game draft of the 2024-25 season schedule? (Note: clarification, the stretches can overlap, the question is really “How many games are the 4th game played over the past 6 nights?”)
+**QUESTION:** How many times are the Thunder scheduled to play 4 games in 6 nights in the provided 80-game draft of the 2024-25 season schedule? (Note: This code counts overlapping stretches rather than distinct stretches.)
 
-**Note by me**: This code counts overlapping stretches rather than distinct stretches.
 
 ```{r}
 # How many games are the 4th game played over the past 6 nights?
@@ -143,7 +140,7 @@ paste("There are", count, "times this season that the Thunder will play 4 games 
 
 ### Question 2
 
-**QUESTION:** From 2014-15 to 2023-24, what is the average number of 4-in-6 stretches for a team in a season? Adjust each team/season to per-82 games before taking your final average.
+**QUESTION:** From 2014-15 to 2023-24, what is the average number of 4-in-6 stretches for a team in a season? Adjust each team/season to per-82 games before taking final average.
 
 ```{r}
 schedule_df <- as.data.frame(schedule)
@@ -342,13 +339,11 @@ paste("Brooklyn Defensive eFG% when opponent on a back-to-back: ", bkn_def_efg_b
 
 ## Part 2 -- Trends and Visualizations
 
-This is an intentionally open ended section, and there are multiple approaches you could take to have a successful project. Feel free to be creative. However, for this section, please consider only the density of games and travel schedule, not the relative on-court strength of different teams.
-
 ### Question 6
 
 **QUESTION:** Please identify at least 2 trends in scheduling over time. In other words, how are the more recent schedules different from the schedules of the past? Please include a visual (plot or styled table) highlighting or explaining each trend and include a brief written description of your findings.
 
-**Note by me: The first trend I tracked was the average change in longitude and latitude between consecutive games and compare them season-by-season. The second trend I tracked was the average change in days since previous game season-by-season.**
+**The first trend I tracked was the average change in longitude and latitude between consecutive games and compare them season-by-season. The second trend I tracked was the average change in days since previous game season-by-season.**
 
 ```{r}
 # Average change in longitude/latitude from one game to the next (how is it different from 2014-2018 in comparison to 2019-2023?)
@@ -555,7 +550,7 @@ schedule_tool(draft_schedule, "DEN", 2024)
 
 ### Question 8
 
-**QUESTION:** Using your tool, what is the best and worst part of OKC’s 2024-25 draft schedule? Please give your answer as a short brief to members of the front office and coaching staff to set expectations going into the season. You can include context from past schedules.
+**QUESTION:** Using your tool, what is the best and worst part of OKC’s 2024-25 draft schedule? 
 
 [**ANSWER 8:**]{style="color:red"}
 
@@ -663,5 +658,6 @@ This model takes the season-by-season schedule factors dataframe from the previo
 ```{r}
 summary(win_loss_model)
 ```
+
 
 
